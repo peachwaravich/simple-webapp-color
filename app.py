@@ -35,4 +35,5 @@ def read_file():
     return render_template('./templates/hello.html', name=socket.gethostname(), contents=contents, color=color_codes[color])
 
 if __name__ == "__main__":
+    app.debug = True
     app.run(host="0.0.0.0", port="8080")
